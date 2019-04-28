@@ -80,8 +80,6 @@
                 <groupId>org.benf</groupId>
                 <artifactId>cfr</artifactId>
                 <version>0.132</version>
-                <scope>system</scope>
-                <systemPath>/Users/oneapm/git/arthas/lib/org/benf/cfr/0.132/cfr-0.132.jar</systemPath>
             </dependency>
             <dependency>
                 <groupId>org.ow2.asm</groupId>
