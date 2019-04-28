@@ -23,10 +23,6 @@ public interface Constants {
 
     String EXAMPLE = "\nEXAMPLES:\n";
 
-    String WIKI = "\nWIKI:\n";
-
-    String WIKI_HOME = "  https://alibaba.github.io/arthas/";
-
     String EXPRESS_EXAMPLES =   "Examples:\n" +
                                 "  params\n" +
                                 "  params[0]\n" +

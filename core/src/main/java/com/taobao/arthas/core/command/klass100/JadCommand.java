@@ -45,7 +45,7 @@ import static com.taobao.text.ui.Element.label;
         "  jad --source-only java.lang.String\n" +
         "  jad -c 39eb305e org/apache/log4j/Logger\n" +
         "  jad -c 39eb305e -E org\\\\.apache\\\\.*\\\\.StringUtils\n" +
-        Constants.WIKI + Constants.WIKI_HOME + "jad")
+        "jad")
 public class JadCommand extends AnnotatedCommand {
     private static final Logger logger = LogUtil.getArthasLogger();
     private static Pattern pattern = Pattern.compile("(?m)^/\\*\\s*\\*/\\s*$" + System.getProperty("line.separator"));

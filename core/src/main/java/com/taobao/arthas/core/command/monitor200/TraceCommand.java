@@ -33,7 +33,7 @@ import java.util.List;
         "  trace *StringUtils isBlank '#cost>100'\n" +
         "  trace -E org\\\\.apache\\\\.commons\\\\.lang\\\\.StringUtils isBlank\n" +
         "  trace -E com.test.ClassA|org.test.ClassB method1|method2|method3\n" +
-        Constants.WIKI + Constants.WIKI_HOME + "trace")
+        "trace")
 public class TraceCommand extends EnhancerCommand {
 
     private String classPattern;

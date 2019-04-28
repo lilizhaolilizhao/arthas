@@ -29,7 +29,7 @@ import java.io.InputStreamReader;
  */
 @Name("keymap")
 @Summary("Display all the available keymap for the specified connection.")
-@Description(Constants.WIKI + Constants.WIKI_HOME + "keymap")
+@Description("keymap")
 public class KeymapCommand extends AnnotatedCommand {
     private static final Logger logger = LogUtil.getArthasLogger();
 

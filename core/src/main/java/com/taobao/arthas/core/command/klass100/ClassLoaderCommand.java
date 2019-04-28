@@ -47,7 +47,7 @@ import java.util.TreeSet;
         "  classloader -a\n" +
         "  classloader -a -c 327a647b\n" +
         "  classloader -c 659e0bfd --load demo.MathGame\n" +
-        Constants.WIKI + Constants.WIKI_HOME + "classloader")
+        "classloader")
 public class ClassLoaderCommand extends AnnotatedCommand {
     private boolean isTree = false;
     private String hashCode;

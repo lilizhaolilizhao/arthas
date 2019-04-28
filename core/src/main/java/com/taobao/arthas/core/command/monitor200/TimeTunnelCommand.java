@@ -47,7 +47,7 @@ import static java.lang.String.format;
         "  tt -i 1000 -p \n" +
         "  tt -i 1000 -p --replay-times 3 --replay-interval 3000\n" +
         "  tt --delete-all\n" +
-        Constants.WIKI + Constants.WIKI_HOME + "tt")
+        "tt")
 public class TimeTunnelCommand extends EnhancerCommand {
     // 时间隧道(时间碎片的集合)
     private static final Map<Integer, TimeFragment> timeFragmentMap = new LinkedHashMap<Integer, TimeFragment>();

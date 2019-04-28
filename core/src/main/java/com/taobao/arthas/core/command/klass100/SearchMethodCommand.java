@@ -44,7 +44,7 @@ import com.taobao.text.util.RenderUtil;
         "  sm -d org/apache/commons/lang/StringUtils\n" +
         "  sm *StringUtils *\n" +
         "  sm -Ed org\\\\.apache\\\\.commons\\\\.lang\\.StringUtils .*\n" +
-        Constants.WIKI + Constants.WIKI_HOME + "sm")
+        "sm")
 public class SearchMethodCommand extends AnnotatedCommand {
 
     private String classPattern;

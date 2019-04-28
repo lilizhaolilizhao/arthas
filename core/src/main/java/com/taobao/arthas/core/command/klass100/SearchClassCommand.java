@@ -36,7 +36,7 @@ import com.taobao.text.util.RenderUtil;
         "  sc -d *StringUtils\n" +
         "  sc -d -f org.apache.commons.lang.StringUtils\n" +
         "  sc -E org\\\\.apache\\\\.commons\\\\.lang\\\\.StringUtils\n" +
-        Constants.WIKI + Constants.WIKI_HOME + "sc")
+        "sc")
 public class SearchClassCommand extends AnnotatedCommand {
     private String classPattern;
     private boolean isDetail = false;

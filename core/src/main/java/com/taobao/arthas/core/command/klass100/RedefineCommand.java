@@ -34,7 +34,7 @@ import com.taobao.middleware.cli.annotations.Summary;
 @Description(Constants.EXAMPLE +
                 "  redefine /tmp/Test.class\n" +
                 "  redefine -c 327a647b /tmp/Test.class /tmp/Test\\$Inner.class \n" +
-                Constants.WIKI + Constants.WIKI_HOME + "redefine")
+                "redefine")
 public class RedefineCommand extends AnnotatedCommand {
 
     private static final int MAX_FILE_SIZE = 10 * 1024 * 1024;

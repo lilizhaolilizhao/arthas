@@ -34,7 +34,7 @@ import com.taobao.middleware.logger.Logger;
 @Name("mc")
 @Summary("Memory compiler, compiles java files into bytecode and class files in memory.")
 @Description(Constants.EXAMPLE + "  mc /tmp/Test.java\n" + "  mc -c 327a647b /tmp/Test.java\n"
-                + "  mc -d /tmp/output /tmp/ClassA.java /tmp/ClassB.java\n" + Constants.WIKI + Constants.WIKI_HOME
+                + "  mc -d /tmp/output /tmp/ClassA.java /tmp/ClassB.java\n"
                 + "mc")
 public class MemoryCompilerCommand extends AnnotatedCommand {
 
