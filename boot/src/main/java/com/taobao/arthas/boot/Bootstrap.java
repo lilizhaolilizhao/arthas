@@ -411,7 +411,7 @@ public class Bootstrap {
 
         verifyArthasHome(arthasHomeDir.getAbsolutePath());
 
-        AnsiLog.info("arthas home: " + arthasHomeDir);
+        AnsiLog.info("alert tool home: " + arthasHomeDir);
 
         if (telnetPortPid > 0 && pid == telnetPortPid) {
             AnsiLog.info("The target process already listen port {}, skip attach.", bootstrap.getTelnetPort());
@@ -477,7 +477,7 @@ public class Bootstrap {
         telnetArgs.add(bootstrap.getTargetIp());
         telnetArgs.add("" + bootstrap.getTelnetPort());
 
-        AnsiLog.info("arthas-client connect {} {}", bootstrap.getTargetIp(), bootstrap.getTelnetPort());
+        AnsiLog.info("alert-client connect {} {}", bootstrap.getTargetIp(), bootstrap.getTelnetPort());
         AnsiLog.debug("Start arthas-client.jar args: " + telnetArgs);
         mainMethod.invoke(null, new Object[] { telnetArgs.toArray(new String[0]) });
     }
