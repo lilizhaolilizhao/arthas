@@ -17,14 +17,12 @@ import static com.taobao.text.ui.Element.label;
  */
 public class ArthasBanner {
     private static final String LOGO_LOCATION = "/com/taobao/arthas/core/res/logo.txt";
-    private static final String CREDIT_LOCATION = "/com/taobao/arthas/core/res/thanks.txt";
     private static final String VERSION_LOCATION = "/com/taobao/arthas/core/res/version";
     private static final String WIKI = "https://alibaba.github.io/arthas";
     private static final String TUTORIALS = "https://alibaba.github.io/arthas/arthas-tutorials";
 
     private static String LOGO = "Alert Tool";
     private static String VERSION = "unknown";
-    private static String THANKS = "";
 
     private static final Logger logger = LogUtil.getArthasLogger();
 
@@ -77,10 +75,6 @@ public class ArthasBanner {
 
     public static String tutorials() {
         return TUTORIALS;
-    }
-
-    public static String credit() {
-        return THANKS;
     }
 
     public static String version() {

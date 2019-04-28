@@ -14,7 +14,6 @@ import com.taobao.arthas.core.command.basic1000.SystemPropertyCommand;
 import com.taobao.arthas.core.command.basic1000.VersionCommand;
 import com.taobao.arthas.core.command.hidden.JulyCommand;
 import com.taobao.arthas.core.command.hidden.OptionsCommand;
-import com.taobao.arthas.core.command.hidden.ThanksCommand;
 import com.taobao.arthas.core.command.klass100.ClassLoaderCommand;
 import com.taobao.arthas.core.command.klass100.DumpClassCommand;
 import com.taobao.arthas.core.command.klass100.GetStaticCommand;
@@ -77,7 +76,6 @@ public class BuiltinCommandPack implements CommandResolver {
         commands.add(Command.create(DashboardCommand.class));
         commands.add(Command.create(DumpClassCommand.class));
         commands.add(Command.create(JulyCommand.class));
-        commands.add(Command.create(ThanksCommand.class));
         commands.add(Command.create(OptionsCommand.class));
         commands.add(Command.create(ClsCommand.class));
         commands.add(Command.create(ResetCommand.class));
