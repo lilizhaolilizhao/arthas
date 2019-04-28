@@ -27,7 +27,7 @@ public interface Constants {
     /**
      * 命令提示符
      */
-    String DEFAULT_PROMPT = "$ ";
+    String DEFAULT_PROMPT = ">>>";
 
     /**
      * 带颜色命令提示符

@@ -45,7 +45,7 @@ import jline.console.KeyMap;
                 + "  java -jar arthas-client.jar -c 'dashboard -n 1' \n"
                 + "  java -jar arthas-client.jar -f batch.as 127.0.0.1\n")
 public class TelnetConsole {
-    private static final String PROMPT = "$";
+    private static final String PROMPT = ">>>";
     private static final int DEFAULT_CONNECTION_TIMEOUT = 5000; // 5000 ms
     private static final int DEFAULT_BUFFER_SIZE = 1024;
 

@@ -22,7 +22,7 @@ public class ArthasBanner {
     private static final String WIKI = "https://alibaba.github.io/arthas";
     private static final String TUTORIALS = "https://alibaba.github.io/arthas/arthas-tutorials";
 
-    private static String LOGO = "Welcome to Arthas";
+    private static String LOGO = "Alert Tool";
     private static String VERSION = "unknown";
     private static String THANKS = "";
 
@@ -31,7 +31,6 @@ public class ArthasBanner {
     static {
         try {
             String logoText = IOUtils.toString(ShellServerOptions.class.getResourceAsStream(LOGO_LOCATION));
-            THANKS = IOUtils.toString(ShellServerOptions.class.getResourceAsStream(CREDIT_LOCATION));
             InputStream versionInputStream = ShellServerOptions.class.getResourceAsStream(VERSION_LOCATION);
             if (versionInputStream != null) {
                 VERSION = IOUtils.toString(versionInputStream).trim();
@@ -43,12 +42,12 @@ public class ArthasBanner {
             }
 
             StringBuilder sb = new StringBuilder();
-            String[] LOGOS = new String[6];
+            String[] LOGOS = new String[10];
             int i = 0, j = 0;
             for (String line : logoText.split("\n")) {
                 sb.append(line);
                 sb.append("\n");
-                if (i++ == 4) {
+                if (i++ == 5) {
                     LOGOS[j++] = sb.toString();
                     i = 0;
                     sb.setLength(0);
@@ -61,7 +60,11 @@ public class ArthasBanner {
                     label(LOGOS[2]).style(Decoration.bold.fg(Color.cyan)),
                     label(LOGOS[3]).style(Decoration.bold.fg(Color.magenta)),
                     label(LOGOS[4]).style(Decoration.bold.fg(Color.green)),
-                    label(LOGOS[5]).style(Decoration.bold.fg(Color.blue)));
+                    label(LOGOS[5]).style(Decoration.bold.fg(Color.red)),
+                    label(LOGOS[6]).style(Decoration.bold.fg(Color.magenta)),
+                    label(LOGOS[7]).style(Decoration.bold.fg(Color.yellow)),
+                    label(LOGOS[8]).style(Decoration.bold.fg(Color.cyan)),
+                    label(LOGOS[9]).style(Decoration.bold.fg(Color.red)));
             LOGO = RenderUtil.render(logoTable);
         } catch (Throwable e) {
             e.printStackTrace();
@@ -93,11 +96,7 @@ public class ArthasBanner {
     }
 
     public static String welcome() {
-        logger.info("arthas version: " + version());
         TableElement table = new TableElement().rightCellPadding(1)
-                        .row("wiki", wiki())
-                        .row("tutorials", tutorials())
-                        .row("version", version())
                         .row("pid", PidUtils.currentPid())
                         .row("time", DateUtils.getCurrentDate());
 
